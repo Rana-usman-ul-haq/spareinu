@@ -1528,7 +1528,7 @@ contract spareinuDividendTracker is DividendPayingToken, Ownable {
     event Claim(address indexed account, uint256 amount, bool indexed automatic);
 
     constructor() DividendPayingToken("spareinu_Dividend_Tracker", "spareinu_Dividend_Tracker") {
-        claimWait = 50;
+        claimWait = 3600;
         minimumTokenBalanceForDividends = 10000 * (10**18); //must hold 10000+ tokens
     }
 
